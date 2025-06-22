@@ -17,7 +17,7 @@ jobs:
 
       - name: Add daily commit - 24ds1000011@ds.study.iitm.ac.in
         run: |
-          echo "Daily update: $(date)" >> daily-log.txt
+          echo "Daily update: $(date)" > daily-log.txt
           git config --global user.name "GitHub Action Bot"
           git config --global user.email "24ds1000011@ds.study.iitm.ac.in"
           git add daily-log.txt
