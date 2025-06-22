@@ -1,9 +1,9 @@
 name: Daily Commit Automation
 
 on:
-  workflow_dispatch:           # allows manual run from GitHub UI
+  workflow_dispatch:
   schedule:
-    - cron: '15 6 * * *'       # runs every day at 06:15 UTC (11:45 AM IST)
+    - cron: '15 6 * * *'
 
 jobs:
   daily-commit:
@@ -12,6 +12,8 @@ jobs:
     steps:
       - name: Checkout the repository
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Add daily commit - 24ds1000011@ds.study.iitm.ac.in
         run: |
