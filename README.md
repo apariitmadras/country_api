@@ -1,2 +1,2 @@
-![Daily Update](https://img.shields.io/badge/Last%20Update-2025--11--11-brightgreen)
+![Daily Update](https://img.shields.io/badge/Last%20Update-2025--11--12-brightgreen)
 # country_api
